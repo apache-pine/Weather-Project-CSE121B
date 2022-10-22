@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Local Weather</title>
+    <meta
+      name="description"
+      content="A simple website that allows a user to input their city and
+      state and the site returns local weather conditions."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+  </head>
+  <body>
+    <header>
+      <section class="siteName">
+        <h1>Get Your Local Weather Conditions</h1>
+      </section>
+    </header>
+    <main>
+      <div class="inputDiv">
+        <label class="zip"
+          >Zip Code:
+          <input
+            type="text"
+            name="zip"
+            id="input"
+            placeholder="Enter Zip Code"
+            maxlength="5"
+            required
+        /></label>
+        <button type="submit">Get Weather</button>
+      </div>
+      <div class="weatherDisplay">
+        <h2 class="locationSelected"></h2>
+        <section class="currentConditionsSec">
+          <h3>Current Conditions:</h3>
+          <figure>
+            <img id="weatherIcon" src="" alt="" />
+          </figure>
+          <p id="condition"></p>
+        </section>
+        <section class="tempSec">
+          <h3>Temperature:</h3>
+          <ul class="tempList">
+            <li id="temp"></li>
+            <li id="feelsLike"></li>
+            <li id="tempMax"></li>
+            <li id="tempMin"></li>
+            <li id="pressure"></li>
+            <li id="humidity"></li>
+          </ul>
+        </section>
+        <section class="windSec">
+          <h3>Wind:</h3>
+          <p id="windSpeed"></p>
+          <p id="windDirect"></p>
+          <p id="windChill"></p>
+        </section>
+        <section class="timeSec">
+          <h3>Time:</h3>
+          <p id="currentTime"></p>
+          <p id="sunrise"></p>
+          <p id="sunset"></p>
+        </section>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="scripts/weather.js"></script>
+  </body>
+</html>

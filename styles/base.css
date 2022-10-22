@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 18px;
+	font-family: Acme, Arial, sans-serif;
+	background-color: #052639;
+}
+
+.siteName {
+	padding: 1rem;
+}
+
+h1, h2 {
+	text-align: center;
+	color: white;
+}
+h3 {
+	padding-bottom: .35rem;
+}
+
+.inputDiv {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+label {
+	color: white;
+}
+
+button {
+	width: 50%;
+	padding: .35rem;
+	font-size: 1.3rem;
+	margin: .5rem 0 2rem 0;
+}
+
+.weatherDisplay {
+	padding: 0 10%;
+}
+
+.weatherDisplay section {
+	padding: .5rem 2rem;
+	background-color: #91D9F3;
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	margin: 1rem 0;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+.currentConditionsSec {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
