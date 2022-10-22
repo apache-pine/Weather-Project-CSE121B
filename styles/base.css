@@ -7,6 +7,8 @@ body {
 	font-size: 18px;
 	font-family: Acme, Arial, sans-serif;
 	background-color: #052639;
+	max-width: 500px;
+	margin: 0 auto;
 }
 
 .siteName {
